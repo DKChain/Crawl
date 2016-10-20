@@ -75,7 +75,7 @@ def getsources(url):
         regtime_format = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(regtime))
         print("Succeed:" + mid + "\t" + str(time2 - time1))
         try:
-            conn = pymysql.connect(host='localhost', user='root', passwd='DKblack@HacKer', port=3306, db='bilibili')
+            conn = pymysql.connect(host='localhost', user='root', passwd='', port=3306, db='bilibili')
             cur = conn.cursor()
             cur.execute('insert into user values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)',
                         [mid, name, sex, face, coins, regtime_format, spacesta, birthday, place, description,
