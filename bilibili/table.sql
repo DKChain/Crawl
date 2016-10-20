@@ -1,0 +1,20 @@
+create table user(
+        mid varchar(255) primary key,
+        name varchar(255),
+        sex varchar(8),
+        face varchar(255),
+        coins varchar(20),
+        regtime_format varchar(255),
+        spacesta varchar(255),
+        birthday varchar(255),
+        place varchar(255),
+        description varchar(255),
+        article varchar(255),
+        fans varchar(255),
+        friend varchar(255),
+        attention varchar(255),
+        sign varchar(255),
+        attentions varchar(255),
+        level varchar(255),
+        exp varchar(255)
+        )CHARACTER SET UTF8;
